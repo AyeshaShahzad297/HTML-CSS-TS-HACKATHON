@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arima", system-ui;
+}
+
+.resume-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 70%;
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.resume-container>h1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 0px;
+}
+
+.personal-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    overflow: auto;
+    background-image: url('background1.avif');
+}
+
+.personal-info img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 15px;
+    box-shadow: 0 0 15px #bababa;
+}
+
+main {
+    width: 100%;
+    display: flex;
+}
+
+.left-section {
+    background-color: #333c4d;
+    color: #bababa;
+    padding: 20px;
+    width: 40%;
+    text-align: center;
+    border-right: 5px solid #bababa;
+    overflow: auto;
+}
+
+.right-section {
+    padding: 20px;
+    width: 60%;
+    overflow: auto;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 0px 1px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    padding: 2%;
+    margin: 20px 0 10px;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #bababa;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+h4 {
+    padding-left: 10px;
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: fill round;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 15px black;
+    background-color: #bababa;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #333c4d;
+    color: #bababa;
+}
+@media only screen and (max-width: 800px) {
+    .resume-container {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .personal-info{       
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+    .left-section,.right-section{
+        width: auto;
+        border: none;
+    }
+
+}
